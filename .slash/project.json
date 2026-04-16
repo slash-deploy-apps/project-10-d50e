@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0.0",
+  "createdAt": "2026-04-13T06:14:05.876Z",
+  "updatedAt": "2026-04-13T06:14:18.323Z",
+  "platform": "local",
+  "app": {
+    "type": "webapp"
+  },
+  "preferences": {
+    "techPreference": "medium",
+    "questionLevel": "medium",
+    "designDocs": true
+  },
+  "resources": [
+    {
+      "id": "res_db_project-db",
+      "kind": "database",
+      "role": "primary",
+      "provider": "turso",
+      "externalId": "project-db",
+      "status": "ready",
+      "connection": {
+        "urlEnv": "DATABASE_URL",
+        "tokenEnv": "DATABASE_AUTH_TOKEN"
+      },
+      "createdAt": "2026-04-13T06:14:18.322Z",
+      "updatedAt": "2026-04-13T06:14:18.322Z"
+    }
+  ],
+  "devServers": [
+    {
+      "name": "web",
+      "command": "bun run dev -- --port 4321",
+      "port": 4321,
+      "cwd": "/home/user/projects/project-10"
+    }
+  ]
+}
